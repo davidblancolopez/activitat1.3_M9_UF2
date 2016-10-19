@@ -6,17 +6,20 @@ import java.util.concurrent.Callable;
 
 
 
-public class Multiple implements Callable <Integer>{
+public class Fils implements Callable <Integer>{
     int numComprovar;
     
     
-    public Multiple(int numero){
+    public Fils(int numero){
         this.numComprovar = numero;
     }
     
     
     public Integer call(){
         
+        if (numComprovar % 2 == 0) {
+            
+        }
         return 0;
     }
 }
