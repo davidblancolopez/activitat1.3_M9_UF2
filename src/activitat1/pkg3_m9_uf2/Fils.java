@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 
 
 
-public class Fils implements Callable <Integer>{
+public class Fils implements Callable <boolean>{
     int numComprovar;
     
     
@@ -15,11 +15,8 @@ public class Fils implements Callable <Integer>{
     }
     
     
-    public Integer call(){
-        
-        if (numComprovar % 2 == 0) {
-            
-        }
-        return 0;
+    @Override
+    public boolean call() throws Exception{
+        return (numComprovar % 2 == 0 && numComprovar % 3 == 0);
     }
 }
