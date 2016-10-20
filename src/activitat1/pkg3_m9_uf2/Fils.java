@@ -15,8 +15,8 @@ public class Fils implements Callable <boolean>{
     }
     
     
-    @Override
-    public boolean call() throws Exception{
+
+    public boolean Call() throws Exception{
         return (numComprovar % 2 == 0 && numComprovar % 3 == 0);
     }
 }
