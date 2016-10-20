@@ -3,6 +3,7 @@ package activitat1.pkg3_m9_uf2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Future;
 
 
 public class Activitat13_M9_UF2 {

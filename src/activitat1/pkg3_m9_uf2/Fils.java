@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 
 
 
-public class Fils implements Callable <boolean>{
+public class Fils{
     int numComprovar;
     
     
