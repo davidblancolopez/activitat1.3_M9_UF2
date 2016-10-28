@@ -6,17 +6,17 @@ import java.util.concurrent.Callable;
 
 
 
-public class Fils{
-    int numComprovar;
-    
-    
-    public Fils(int numero){
-        this.numComprovar = numero;
-    }
-    
-    
+public class Fils  implements Callable{
+    private int num;
 
-    public boolean Call() throws Exception{
-        return (numComprovar % 2 == 0 && numComprovar % 3 == 0);
+    public Fils(int num) {
+        this.num = num;
     }
+
+    @Override
+    public Object call() throws Exception {
+        return (this.num % 2 == 0) && (this.num % 3 == 0);
+    }
+    
+    
 }
