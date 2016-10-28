@@ -13,6 +13,7 @@ public class Fils  implements Callable{
         this.num = num;
     }
 
+    //Este run nos devuelve true o false segun si el numero es divisible entre 2 i 3.
     @Override
     public Object call() throws Exception {
         return (this.num % 2 == 0) && (this.num % 3 == 0);
