@@ -26,14 +26,14 @@ public class Activitat13_M9_UF2 {
         }
                 
         
-        //Este bucle nos muestra los multiplesque hemos guardado en el array anterior.
+        //Este bucle nos muestra los multiples que hemos guardado en el array anterior.
         for (int i = 4; i < multiples.size(); i++) {
             if (multiples.get(i).get()) {
                 System.out.println(i + " és múltiple.");
             }
         }
         
-
+        //Se cierra el executor.
         executor.shutdown();
         
         
